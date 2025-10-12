@@ -1,0 +1,385 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.intro {
+    padding: 25px 0;
+    .content {
+        // background: url('/assets/images/bg/basic.webp') repeat top/cover;
+        width: 100%;
+        height: 2010px;
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            img  {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .invitation {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .logo {
+                width: 100%;
+                @include flex-center;
+                padding: 60px 0 60px;
+
+                .box-img {
+                    width: 164px;
+                    
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+            }
+
+            .family-info {
+                padding-bottom: 15px;
+
+                p {
+                    line-height: 1.8;
+                }
+
+                img {
+                    width: 16px;
+                    height: auto;
+                }
+            }
+
+            .announcement {
+                p {
+                    line-height: 1.8;
+                }
+            }
+
+            .couple-names {
+                padding: 15px 0;
+                h2 {
+                    font-family: $font-hero;
+                    font-size: 3.5rem;
+                    letter-spacing: 1.2px;
+                    font-weight: 300;
+                    margin: 15px 0;
+                }
+            }
+
+            .divider {
+                width: 100%;
+
+                .divider-icon {
+                    width: 60px;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .location-time {
+            text-align: center;
+
+            .top-detail {
+                padding: 50px 0;
+
+                h2 {
+                    font-size: 2.063rem;
+                    font-weight: 300;
+                }
+            }
+
+            .photo-area {
+                width: 100%;
+
+                img.couple-img {
+                    width: 237px;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
+            .invitation-text {
+                padding: 50px;
+                
+                p {
+                    line-height: 1.8;
+                }
+            }
+
+            .time {
+                h2 {
+                    font-size: 1.563rem;
+                    font-weight: 300;
+                    margin: 5px;
+                }
+            }
+
+            .venue-details {
+                .divider {
+                    width: 100%;
+                    padding: 50px 0 40px;
+
+                    .divider-icon {
+                        width: 70px;
+                        height: auto;
+                        object-fit: cover;
+                    }
+
+                }
+                p.announcement {
+                    padding-bottom: 20px;
+                }
+
+                .location-name {
+                    font-family: $font-hero;
+                    font-size: 3.8rem;
+                    font-weight: 300;
+                    letter-spacing: 1.2px;
+                    padding-bottom: 10px;
+                }
+
+                .map-link {
+                    width: 100%;
+                    padding: 20px 0;
+
+                    a.map-button {
+                        text-decoration: none;
+                        padding: 5px 95px;
+                        border-radius: 15px;
+                        border: solid 1px $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gallery {
+    width: 100%;
+    height: 900px;
+    margin: 50px 0;
+    background: url('/assets/images/bg/gallerey_bg.webp') no-repeat center/contain;
+    @include flex-center;
+
+    .row1 {
+        display: flex;
+        justify-content: center;
+
+        img.photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 4px;
+        }
+
+        .column1 {
+            .photo-box {
+                width: 100%;
+                max-width: 215px;
+                aspect-ratio: 215 / 321;
+                overflow: hidden;
+            }
+        }
+        .column2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            text-align: center;
+
+            img.icon {
+                width: 86px;
+                height: auto;
+                object-fit: cover;
+                padding-bottom: 20px;
+            }
+            .photo-box {
+                width: 100%;
+                max-width: 105px;
+                aspect-ratio: 105 / 162;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .row2  {
+        display: flex;
+
+        img.photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 4px;
+        }
+        
+        .column1 {
+            .row1 {
+                .photo-box {
+                    width: 100%;
+                    max-width: 162px;
+                    aspect-ratio: 162 / 251;
+                    overflow: hidden
+                    
+                }
+            }
+            .row2 {
+                @include flex-center;
+
+                img.icon {
+                    width: 104px;
+                    height: auto;
+                    object-fit: cover;
+                    padding-top: 40px;
+                }
+            }
+        }
+
+        .column2 {
+            .row1 .photo-box {
+                width: 100%;
+                max-width: 234px;
+                aspect-ratio: 234 / 157;
+                overflow: hidden;
+            }
+
+            .row2 .photo-box {
+                width: 100%;
+                max-width: 181px;
+                aspect-ratio: 181 / 259;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.timeline {
+    background: url('/assets/images/bg/timeline_bg.webp') no-repeat center/contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 860px;
+    padding: 25px 0;
+    .title {
+        font-family: $font-hero;
+        font-size: 3.8rem;
+        font-weight: normal;
+        padding-bottom: 45px;
+    }
+
+    .event {
+        padding-bottom: 28px;
+        .icon {
+            padding-bottom: 8px;
+            img{
+                width: 25px;
+                height: auto;
+            }
+        } 
+        p.time {
+            margin-bottom: 4px;
+        }
+        
+    }
+}
+
+.couple-photo {
+    width: 100%;
+    min-height: 390px;
+    @include flex-center;
+    padding: 35px 0;
+    .container-photo {
+        background: url('/assets/images/bg/');
+        width: 100%;
+        max-width: 297px;
+        aspect-ratio: 297 / 382;
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            img {
+                width: 116px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.our-story {
+    width: 100%;
+    .divider {
+        text-align: center;
+        width: 100%;
+        .divider-icon {
+            width: 151px;
+            height: auto;
+        }
+    }
+    .items {
+        .item {
+            display: flex;
+
+            p.time, h3.title {
+                font-size: 1.063rem;
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+            h3.title {
+                padding-bottom: 10px;
+            }
+            img.overlay {
+                position: absolute;
+            }
+            .column {
+                position: relative;
+                flex: 1;
+                padding: 30px;
+                text-align: justify;
+            }
+        }
+        .item-2022 {
+            p.time {
+                text-align: right;
+            }
+            img.overlay {
+                width: 152px;
+                height: auto;
+                top: 0;
+            }
+        }
+        .item-2023 {
+            img.overlay {
+                width: 152px;
+                height: auto;
+                top: 0;
+                right: 0;
+            }
+        }
+        .item-2025 {
+            p.time {
+                text-align: right;
+            }
+            img.overlay {
+                width: 139px;
+                height: auto;
+                top: 0;
+            }
+        }
+    }
+}

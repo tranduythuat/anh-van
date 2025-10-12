@@ -1,0 +1,25 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main;
+    color: $primary-color;
+    font-size: $font-size-text;
+    @include flex-center;
+}
+
+.container {
+    background: url('/assets/images/bg/bg_main.webp') repeat top/cover;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    box-shadow: $shadow-default;
+    margin: 10px 0;
+}
+
