@@ -1,0 +1,91 @@
+@media (max-width: 430px) {
+  .container {
+    font-size: 11px
+  }
+  .intro .content .invitation .couple-names h2 {
+    font-size: 3rem;
+  }
+
+  .intro .content .location-time .time h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro .content .location-time .venue-details .location-name {
+    font-size: 3.5rem;
+  }
+
+   .album .highlight {
+     min-height: 390px;
+     h2 {
+        font-size: 1.2rem;
+     }
+     h2.album-text {
+        top: 97px;
+        left: 47px;
+     } 
+     img.text-the {
+        width: 50px;
+     }
+
+     .photo-frame.left {
+        left: 31px;
+     }
+   }
+
+  .album .highlight .photo-frame.right {
+    width: 230px;
+    aspect-ratio: 230 / 230;
+  }
+
+  .album .highlight .photo-frame.left {
+    width: 180px;
+    aspect-ratio: 180 / 180;
+  }
+
+  .intro .content {
+    height: 1942px;
+  }
+
+  .rsvp {
+    padding: 20px 78px;
+    margin: 40px 0;
+    .btn {
+        padding: 6px 8px;
+    }
+    textarea {
+        font-size: 0.6rem;
+    }
+  }
+  
+}
+
+@media (max-width: 375px) {
+  .container {
+    font-size: 9px;
+  }
+
+  .intro .content .invitation .couple-names h2 {
+    font-size: 2.5rem;
+  }
+
+  .intro .content .location-time .time h2 {
+    font-size: 1.4rem;
+  }
+
+  .intro .content {
+    height: 1865px;
+  }
+
+  .rsvp {
+    padding: 20px 78px;
+    margin: 40px 0;
+    .btn {
+        font-size: 0.6rem;
+        padding: 6px 5px;
+    }
+    textarea {
+        font-size: 0.6rem;
+    }
+  }
+}
+
