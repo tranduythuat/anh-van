@@ -1,0 +1,802 @@
+@font-face {
+  font-family: "iCielBCOldStyle";
+  src: url("/assets/fonts/ICIELBCOLDSTYLE-REGULAR.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UVNBUCTHU";
+  src: url("/assets/fonts/UVNBUCTHU.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UVNKeChuyen3";
+  src: url("/assets/fonts/UVNKeChuyen3.woff2") format("woff2"), url("/assets/fonts/UVNKeChuyen3.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "iCielBCOldStyle", sans-serif;
+  color: #806331;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: url("/assets/images/bg/bg_main.webp") repeat top/cover;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.513);
+  margin: 10px 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #806331;
+  color: white;
+  padding: 1rem;
+}
+
+section {
+  padding: 0;
+}
+
+.image-wrapper {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+.image-wrapper img {
+  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.animate-flip {
+  transform-origin: left center;
+  transform: rotateY(-120deg) scale(0.9);
+  opacity: 0;
+  filter: brightness(0.6);
+  backface-visibility: hidden;
+  transition: none;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn--primary {
+  background: #806331;
+  color: white;
+}
+.btn--primary:hover {
+  background: #806331;
+}
+
+.cover .content {
+  background: url("/assets/images/bg/hero_bg.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 822px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.cover .content .names {
+  font-family: "UVNBUCTHU", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.cover .content .photo-frame {
+  width: 210px;
+  padding: 30px 0;
+  perspective: 1000px;
+}
+.cover .content .photo-frame img {
+  width: 100%;
+}
+.cover .content .subtext {
+  font-family: "UVNBUCTHU", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.cover .content .divider {
+  margin: 5px 0;
+}
+.cover .content .divider .divider-icon {
+  width: 74px;
+  height: auto;
+}
+.cover .content .divider img.bottom {
+  transform: rotateX(180deg);
+}
+
+.intro {
+  padding: 25px 0;
+}
+.intro .content {
+  width: 100%;
+  height: 2010px;
+  position: relative;
+}
+.intro .content .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.intro .content .overlay img {
+  width: 100%;
+  height: 100%;
+}
+.intro .content .invitation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.intro .content .invitation .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 60px;
+}
+.intro .content .invitation .logo .box-img {
+  width: 164px;
+}
+.intro .content .invitation .logo .box-img img {
+  width: 100%;
+  height: auto;
+}
+.intro .content .invitation .family-info {
+  padding-bottom: 15px;
+}
+.intro .content .invitation .family-info p {
+  line-height: 1.8;
+}
+.intro .content .invitation .family-info img {
+  width: 16px;
+  height: auto;
+}
+.intro .content .invitation .announcement p {
+  line-height: 1.8;
+}
+.intro .content .invitation .couple-names {
+  padding: 15px 0;
+}
+.intro .content .invitation .couple-names h2 {
+  font-family: "UVNBUCTHU", sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+  margin: 15px 0;
+}
+.intro .content .invitation .divider {
+  width: 100%;
+}
+.intro .content .invitation .divider .divider-icon {
+  width: 60px;
+  height: auto;
+  object-fit: cover;
+}
+.intro .content .location-time {
+  text-align: center;
+}
+.intro .content .location-time .top-detail {
+  padding: 50px 0;
+}
+.intro .content .location-time .top-detail h2 {
+  font-size: 2.063rem;
+  font-weight: 300;
+}
+.intro .content .location-time .photo-area {
+  width: 100%;
+}
+.intro .content .location-time .photo-area img.couple-img {
+  width: 237px;
+  height: auto;
+  object-fit: cover;
+}
+.intro .content .location-time .invitation-text {
+  padding: 50px;
+}
+.intro .content .location-time .invitation-text p {
+  line-height: 1.8;
+}
+.intro .content .location-time .time h2 {
+  font-size: 1.563rem;
+  font-weight: 300;
+  margin: 5px;
+}
+.intro .content .location-time .venue-details .divider {
+  width: 100%;
+  padding: 50px 0 40px;
+}
+.intro .content .location-time .venue-details .divider .divider-icon {
+  width: 70px;
+  height: auto;
+  object-fit: cover;
+}
+.intro .content .location-time .venue-details p.announcement {
+  padding-bottom: 20px;
+}
+.intro .content .location-time .venue-details .location-name {
+  font-family: "UVNBUCTHU", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  padding-bottom: 10px;
+}
+.intro .content .location-time .venue-details .map-link {
+  width: 100%;
+  padding: 20px 0;
+}
+.intro .content .location-time .venue-details .map-link a.map-button {
+  text-decoration: none;
+  padding: 5px 95px;
+  border-radius: 15px;
+  border: solid 1px #806331;
+}
+
+.gallery {
+  width: 100%;
+  height: 900px;
+  margin: 50px 0;
+  background: url("/assets/images/bg/gallerey_bg.webp") no-repeat center/contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .row1 {
+  display: flex;
+  justify-content: center;
+}
+.gallery .row1 img.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 4px;
+}
+.gallery .row1 .column1 .photo-box {
+  width: 100%;
+  max-width: 215px;
+  aspect-ratio: 215/321;
+  overflow: hidden;
+}
+.gallery .row1 .column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+}
+.gallery .row1 .column2 img.icon {
+  width: 86px;
+  height: auto;
+  object-fit: cover;
+  padding-bottom: 20px;
+}
+.gallery .row1 .column2 .photo-box {
+  width: 100%;
+  max-width: 105px;
+  aspect-ratio: 105/162;
+  overflow: hidden;
+}
+.gallery .row2 {
+  display: flex;
+}
+.gallery .row2 img.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 4px;
+}
+.gallery .row2 .column1 .row1 .photo-box {
+  width: 100%;
+  max-width: 162px;
+  aspect-ratio: 162/251;
+  overflow: hidden;
+}
+.gallery .row2 .column1 .row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .row2 .column1 .row2 img.icon {
+  width: 104px;
+  height: auto;
+  object-fit: cover;
+  padding-top: 40px;
+}
+.gallery .row2 .column2 .row1 .photo-box {
+  width: 100%;
+  max-width: 234px;
+  aspect-ratio: 234/157;
+  overflow: hidden;
+}
+.gallery .row2 .column2 .row2 .photo-box {
+  width: 100%;
+  max-width: 181px;
+  aspect-ratio: 181/259;
+  overflow: hidden;
+}
+
+.timeline {
+  background: url("/assets/images/bg/timeline_bg.webp") no-repeat center/contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 860px;
+  padding: 25px 0;
+}
+.timeline .title {
+  font-family: "UVNBUCTHU", sans-serif;
+  font-size: 3.8rem;
+  font-weight: normal;
+  padding-bottom: 45px;
+}
+.timeline .event {
+  padding-bottom: 28px;
+}
+.timeline .event .icon {
+  padding-bottom: 8px;
+}
+.timeline .event .icon img {
+  width: 25px;
+  height: auto;
+}
+.timeline .event p.time {
+  margin-bottom: 4px;
+}
+
+.couple-photo {
+  width: 100%;
+  min-height: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+}
+.couple-photo .container-photo {
+  background: url("/assets/images/bg/");
+  width: 100%;
+  max-width: 297px;
+  aspect-ratio: 297/382;
+  position: relative;
+}
+.couple-photo .container-photo img {
+  width: 100%;
+  height: auto;
+}
+.couple-photo .container-photo .overlay {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.couple-photo .container-photo .overlay img {
+  width: 116px;
+  height: auto;
+}
+
+.our-story {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.our-story .divider {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.our-story .divider .divider-icon {
+  width: 151px;
+  height: auto;
+}
+.our-story .items .item {
+  display: flex;
+}
+.our-story .items .item p.time,
+.our-story .items .item h3.title {
+  font-size: 1.063rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  top: -5px;
+}
+.our-story .items .item h3.title {
+  padding-bottom: 10px;
+}
+.our-story .items .item img.overlay {
+  position: absolute;
+}
+.our-story .items .item .column {
+  position: relative;
+  flex: 1;
+  padding: 0 30px 50px;
+  text-align: justify;
+}
+.our-story .items .item .column:first-child:after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #806331;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(50%);
+}
+.our-story .items .item-2022 p.time {
+  text-align: right;
+}
+.our-story .items .item-2022 img.overlay {
+  width: 152px;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+.our-story .items .item-2022 .column:first-child {
+  border-right: solid 1px #806331;
+}
+.our-story .items .item-2023 h3.title {
+  text-align: right;
+}
+.our-story .items .item-2023 img.overlay {
+  width: 152px;
+  height: auto;
+  top: 0;
+  right: 0;
+}
+.our-story .items .item-2023 .column:first-child {
+  border-right: solid 1px #806331;
+}
+.our-story .items .item-2025 p.time {
+  text-align: right;
+}
+.our-story .items .item-2025 img.overlay {
+  width: 139px;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+.our-story .items .item-2025 .column {
+  padding: 0 30px;
+}
+.our-story .items .item-2025 .column:first-child {
+  border-right: solid 1px #806331;
+}
+
+.divider-paint {
+  width: 100%;
+  min-height: 380px;
+  margin-bottom: 25px;
+}
+.divider-paint .img-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.divider-paint .img-box.img-end {
+  position: relative;
+}
+.divider-paint .img-box.img-end img {
+  position: absolute;
+  top: -10px;
+}
+
+.album {
+  width: 100%;
+  overflow: hidden;
+}
+.album-style .img-box img.film {
+  width: 100%;
+  height: auto;
+}
+.album .highlight {
+  width: 100%;
+  min-height: 492px;
+  perspective: 1000px;
+  position: relative;
+}
+.album .highlight img.text-the {
+  width: 91px;
+  height: auto;
+  position: absolute;
+  top: 68px;
+  left: 35px;
+}
+.album .highlight h2 {
+  font-size: 1.938rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.album .highlight h2.album-text {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+}
+.album .highlight h2.oflove-text {
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+}
+.album .highlight .photo-frame.right {
+  max-width: 100%;
+  width: 300px;
+  aspect-ratio: 300/300;
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+.album .highlight .photo-frame .img-box {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.513);
+}
+.album .highlight .photo-frame.right .img-box {
+  background-color: #f2ebd8;
+  width: 100%;
+  height: 100%;
+  transform: rotate(10deg);
+}
+.album .highlight .photo-frame.right .img-box img {
+  width: 100%;
+  max-width: 275px;
+  aspect-ratio: 275/226;
+  object-fit: cover;
+  transform: translate(12.5px, 12.5px);
+}
+.album .highlight .photo-frame.left {
+  position: absolute;
+  bottom: 55px;
+  left: 52px;
+}
+.album .highlight .photo-frame.left .img-box {
+  background-color: rgb(250, 229, 229);
+  max-width: 100%;
+  width: 228px;
+  aspect-ratio: 228/228;
+  transform: rotate(-4deg);
+}
+.album .highlight .photo-frame.left .img-box img {
+  width: 100%;
+  max-width: 207px;
+  aspect-ratio: 207/170;
+  object-fit: cover;
+  transform: translate(11.5px, 11.5px);
+}
+.album .slider .swiper {
+  width: 95%;
+  margin: 10px auto;
+}
+.album .slider .main-swiper {
+  height: 70vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.album .slider .main-swiper .swiper-button-next,
+.album .slider .main-swiper .swiper-button-prev {
+  color: #806331;
+}
+.album .slider .main-swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.album .slider .thumb-swiper {
+  height: 120px;
+  box-sizing: border-box;
+  padding: 0;
+}
+.album .slider .thumb-swiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.album .slider .thumb-swiper .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 2px solid #fff;
+}
+.album .slider .thumb-swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rsvp {
+  background: url("/assets/images/bg/rsvp_bg.webp") no-repeat center/contain;
+  min-height: 580px;
+  width: 100%;
+  padding: 20px 85px;
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.rsvp h2.title {
+  font-family: "UVNKeChuyen3", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+.rsvp p.info-text {
+  padding: 10px 0 20px;
+}
+.rsvp .button-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.rsvp .radio-input {
+  display: none;
+}
+.rsvp .btn {
+  flex: 1;
+  padding: 6px 20px;
+  border: 1px solid #806331;
+  border-radius: 25px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.65rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+}
+.rsvp .btn-yes {
+  background: transparent;
+  color: #806331;
+}
+.rsvp .btn-yes:hover {
+  background: #806331;
+  color: #faf8f3;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(107, 93, 79, 0.3);
+}
+.rsvp .radio-input:checked + .btn-yes {
+  background: #806331;
+  color: #faf8f3;
+}
+.rsvp .btn-no {
+  background: transparent;
+  color: #806331;
+}
+.rsvp .btn-no:hover {
+  background: #806331;
+  color: #faf8f3;
+  transform: translateY(-2px);
+}
+.rsvp .radio-input:checked + .btn {
+  background: #806331;
+  color: #faf8f3;
+}
+.rsvp .form-group {
+  margin-bottom: 15px;
+}
+.rsvp input,
+.rsvp textarea {
+  width: 100%;
+  padding: 6px 20px;
+  border: 1px solid #806331;
+  border-radius: 25px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.65rem;
+  color: #806331;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.rsvp input:focus,
+.rsvp textarea:focus {
+  outline: none;
+  border-color: #806331;
+  box-shadow: 0 0 10px rgba(107, 93, 79, 0.1);
+}
+.rsvp input::placeholder,
+.rsvp textarea::placeholder {
+  color: #a89b88;
+}
+.rsvp textarea {
+  min-height: 100px;
+  resize: vertical;
+  border-radius: 20px;
+  font-size: 0.65rem;
+}
+.rsvp .submit-btn {
+  width: 40%;
+  padding: 6px 15px;
+  background: #806331;
+  color: #faf8f3;
+  border: none;
+  border-radius: 25px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.65rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+.rsvp .submit-btn:hover {
+  background: #574d42;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(107, 93, 79, 0.3);
+}
+.rsvp .submit-btn:active {
+  transform: translateY(0);
+}
+
+.footer {
+  background: url("/assets/images/bg/end_pg.webp") no-repeat center/cover;
+  width: 100%;
+  min-height: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.footer .logo {
+  margin-top: 20px;
+  width: 100%;
+}
+.footer .logo img {
+  width: 142px;
+  height: auto;
+  object-fit: cover;
+}
+.footer .qr {
+  width: 100%;
+}
+.footer .qr p {
+  text-transform: uppercase;
+  padding: 55px 84px 0;
+  line-height: 1.5;
+}
+.footer .qr img {
+  width: 108px;
+  height: auto;
+  margin: 40px;
+}
+.footer p.thanks {
+  padding: 0 45px;
+}
+.footer p.credits {
+  font-family: "UVNKeChuyen3", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 15px 0 60px;
+}
+.footer p.text-end {
+  text-transform: uppercase;
+  font-size: 0.55rem;
+}
+
+/*# sourceMappingURL=main.css.map */
