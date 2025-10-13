@@ -5,7 +5,7 @@
     padding: 25px 0;
 
     .content {
-        // background: url('/assets/images/bg/basic.webp') repeat top/cover;
+        // background: url('assets/images/bg/basic.webp') repeat top/cover;
         width: 100%;
         height: 2010px;
         position: relative;
@@ -169,7 +169,7 @@
     width: 100%;
     height: 900px;
     margin: 50px 0;
-    background: url("/assets/images/bg/gallerey_bg.webp") no-repeat center/contain;
+    background: url("assets/images/bg/gallerey_bg.webp") no-repeat center/contain;
     @include flex-center;
 
     .row1 {
@@ -265,7 +265,7 @@
 }
 
 .timeline {
-    background: url("/assets/images/bg/timeline_bg.webp") no-repeat center/contain;
+    background: url("assets/images/bg/timeline_bg.webp") no-repeat center/contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -306,7 +306,7 @@
     padding: 35px 0;
 
     .container-photo {
-        background: url("/assets/images/bg/");
+        background: url("assets/images/bg/");
         width: 100%;
         max-width: 297px;
         aspect-ratio: 297 / 382;
@@ -611,7 +611,7 @@
 }
 
 .rsvp {
-    background: url('/assets/images/bg/rsvp_bg.webp') no-repeat center/contain;
+    background: url('assets/images/bg/rsvp_bg.webp') no-repeat center/contain;
     min-height: 580px;
     width: 100%;
     padding: 20px 85px;
@@ -756,7 +756,7 @@
 }
 
 .footer {
-    background: url('/assets/images/bg/end_pg.webp') no-repeat center/cover;
+    background: url('assets/images/bg/end_pg.webp') no-repeat center/cover;
     width: 100%;
     min-height: 730px;
     display: flex;    
