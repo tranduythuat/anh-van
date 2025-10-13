@@ -349,26 +349,47 @@
             .column {
                 position: relative;
                 flex: 1;
-                padding: 30px;
+                padding: 0 30px;
                 text-align: justify;
             }
         }
         .item-2022 {
             p.time {
                 text-align: right;
+                &::after {
+                    
+                }
             }
             img.overlay {
                 width: 152px;
                 height: auto;
                 top: 0;
+                left: 0;
+            }
+            .column:first-child {
+                border-right: solid 1px $primary-color;
+
+                &::after {
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    background-color: $primary-color;
+
+                }
             }
         }
         .item-2023 {
+            h3.title {
+                text-align: right;
+            }
             img.overlay {
                 width: 152px;
                 height: auto;
                 top: 0;
                 right: 0;
+            }
+            .column:first-child {
+                border-right: solid 1px $primary-color;
             }
         }
         .item-2025 {
@@ -379,6 +400,10 @@
                 width: 139px;
                 height: auto;
                 top: 0;
+                left: 0;
+            }
+            .column:first-child {
+                border-right: solid 1px $primary-color;
             }
         }
     }
