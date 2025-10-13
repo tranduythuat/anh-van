@@ -21,8 +21,3 @@
     backface-visibility: hidden;
     transition: none;
 }
-
-.animate-flip.active {
-    opacity: 1;
-    transform: rotateY(0deg);
-}

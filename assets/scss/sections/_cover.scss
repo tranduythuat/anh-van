@@ -19,6 +19,7 @@
         .photo-frame {
             width: 210px;
             padding: 30px 0;
+            perspective: 1000px;
 
             img {
                 width: 100%;
