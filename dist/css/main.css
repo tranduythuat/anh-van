@@ -258,6 +258,70 @@ section {
   border-radius: 15px;
   border: solid 1px #806331;
 }
+@media (max-width: 430px) {
+  .intro .content {
+    height: 1742px;
+  }
+  .intro .content .invitation .logo .box-img {
+    width: 126px;
+  }
+  .intro .content .invitation .family-info {
+    padding-bottom: 10px;
+  }
+  .intro .content .invitation .family-info p {
+    line-height: 1.5;
+  }
+  .intro .content .invitation .family-info img {
+    width: 14px;
+    height: auto;
+  }
+  .intro .content .invitation .announcement p {
+    line-height: 1.5;
+  }
+  .intro .content .invitation .couple-names {
+    padding: 20px 0;
+  }
+  .intro .content .invitation .couple-names h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin: 10px 0;
+  }
+  .intro .content .invitation .divider .divider-icon {
+    width: 45px;
+  }
+  .intro .content .invitation .time h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 5px;
+  }
+  .intro .content .location-time .time h2 {
+    font-size: 1.3rem;
+  }
+  .intro .content .location-time .invitation-text {
+    padding: 40px;
+  }
+  .intro .content .location-time .venue-details .location-name {
+    font-size: 2.5rem;
+  }
+}
+
+.divider-paint {
+  width: 100%;
+  min-height: 380px;
+  margin-bottom: 25px;
+}
+.divider-paint .img-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.divider-paint .img-box.img-end {
+  position: relative;
+}
+.divider-paint .img-box.img-end img {
+  position: absolute;
+  top: -10px;
+}
 
 .gallery {
   width: 100%;
@@ -268,33 +332,44 @@ section {
   justify-content: center;
   align-items: center;
 }
-.gallery .row1 {
+.gallery .gallery-grid {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.gallery .row1 img.photo {
+.gallery img.photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   padding: 4px;
 }
+.gallery .row1 {
+  display: flex;
+  justify-content: center;
+}
+.gallery .row1 .column1 {
+  display: flex;
+}
 .gallery .row1 .column1 .photo-box {
   width: 100%;
   max-width: 215px;
-  aspect-ratio: 215/321;
+  aspect-ratio: 215/336;
   overflow: hidden;
 }
 .gallery .row1 .column2 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+.gallery .row1 .column2 .row {
   text-align: center;
 }
 .gallery .row1 .column2 img.icon {
   width: 86px;
   height: auto;
+  padding-bottom: 15px;
   object-fit: cover;
-  padding-bottom: 20px;
 }
 .gallery .row1 .column2 .photo-box {
   width: 100%;
@@ -304,41 +379,55 @@ section {
 }
 .gallery .row2 {
   display: flex;
+  justify-content: center;
 }
-.gallery .row2 img.photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding: 4px;
-}
-.gallery .row2 .column1 .row1 .photo-box {
+.gallery .row2 .column1 .row:first-child .photo-box {
   width: 100%;
   max-width: 162px;
   aspect-ratio: 162/251;
   overflow: hidden;
 }
-.gallery .row2 .column1 .row2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gallery .row2 .column1 .row2 img.icon {
+.gallery .row2 .column1 .row:last-child img.icon {
   width: 104px;
   height: auto;
   object-fit: cover;
   padding-top: 40px;
 }
-.gallery .row2 .column2 .row1 .photo-box {
+.gallery .row2 .column2 .row:first-child .photo-box {
   width: 100%;
   max-width: 234px;
   aspect-ratio: 234/157;
   overflow: hidden;
 }
-.gallery .row2 .column2 .row2 .photo-box {
+.gallery .row2 .column2 .row:last-child .photo-box {
   width: 100%;
   max-width: 181px;
   aspect-ratio: 181/259;
   overflow: hidden;
+}
+@media (max-width: 430px) {
+  .gallery {
+    height: 820px;
+    margin: 0;
+  }
+  .gallery .gallery-grid {
+    padding: 15px;
+  }
+  .gallery .row1 {
+    width: 75%;
+  }
+  .gallery .row1 .column2 img.icon {
+    width: 60px;
+  }
+  .gallery .row2 {
+    width: 85%;
+  }
+  .gallery .row2 .column1 {
+    text-align: center;
+  }
+  .gallery .row2 .column2 img.icon {
+    width: 60px;
+  }
 }
 
 .timeline {
@@ -349,7 +438,7 @@ section {
   text-align: center;
   width: 100%;
   min-height: 860px;
-  padding: 25px 0;
+  padding: 25px 15%;
 }
 .timeline .title {
   font-family: "UVNBUCTHU", sans-serif;
@@ -370,6 +459,21 @@ section {
 .timeline .event p.time {
   margin-bottom: 4px;
 }
+@media (max-width: 430px) {
+  .timeline {
+    min-height: 730px;
+  }
+  .timeline .title {
+    font-size: 2.8rem;
+    padding-bottom: 30px;
+  }
+  .timeline .event {
+    padding-bottom: 15px;
+  }
+  .timeline .event p.time {
+    margin-bottom: 2px;
+  }
+}
 
 .couple-photo {
   width: 100%;
@@ -385,6 +489,9 @@ section {
   max-width: 297px;
   aspect-ratio: 297/382;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .couple-photo .container-photo img {
   width: 100%;
@@ -399,6 +506,20 @@ section {
 .couple-photo .container-photo .overlay img {
   width: 116px;
   height: auto;
+}
+@media (max-width: 430px) {
+  .couple-photo {
+    padding: 0;
+  }
+  .couple-photo .container-photo img {
+    width: 85%;
+  }
+  .couple-photo .container-photo .overlay {
+    bottom: 80px;
+  }
+  .couple-photo .container-photo .overlay img {
+    width: 100px;
+  }
 }
 
 .our-story {
@@ -453,7 +574,7 @@ section {
   text-align: right;
 }
 .our-story .items .item-2022 img.overlay {
-  width: 152px;
+  width: 70%;
   height: auto;
   top: 0;
   left: 0;
@@ -465,7 +586,7 @@ section {
   text-align: right;
 }
 .our-story .items .item-2023 img.overlay {
-  width: 152px;
+  width: 70%;
   height: auto;
   top: 0;
   right: 0;
@@ -477,7 +598,7 @@ section {
   text-align: right;
 }
 .our-story .items .item-2025 img.overlay {
-  width: 139px;
+  width: 70%;
   height: auto;
   top: 0;
   left: 0;
@@ -488,23 +609,13 @@ section {
 .our-story .items .item-2025 .column:first-child {
   border-right: solid 1px #806331;
 }
-
-.divider-paint {
-  width: 100%;
-  min-height: 380px;
-  margin-bottom: 25px;
-}
-.divider-paint .img-box img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-.divider-paint .img-box.img-end {
-  position: relative;
-}
-.divider-paint .img-box.img-end img {
-  position: absolute;
-  top: -10px;
+@media (max-width: 430px) {
+  .our-story .items .item .column {
+    padding: 0 25px 35px;
+  }
+  .our-story .items .item-2025 .column {
+    padding: 0 25px;
+  }
 }
 
 .album {
@@ -517,7 +628,7 @@ section {
 }
 .album .highlight {
   width: 100%;
-  min-height: 492px;
+  min-height: 440px;
   perspective: 1000px;
   position: relative;
 }
@@ -544,12 +655,11 @@ section {
   right: 80px;
 }
 .album .highlight .photo-frame.right {
-  max-width: 100%;
-  width: 300px;
+  width: 53%;
   aspect-ratio: 300/300;
   position: absolute;
-  right: 0;
-  top: -10px;
+  left: 43%;
+  top: -20px;
 }
 .album .highlight .photo-frame .img-box {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.513);
@@ -559,7 +669,7 @@ section {
   width: 100%;
   height: 100%;
   padding: 10px;
-  transform: rotate(10deg);
+  transform: rotate(13deg);
 }
 .album .highlight .photo-frame.right .img-box img {
   width: 100%;
@@ -569,7 +679,8 @@ section {
 .album .highlight .photo-frame.left {
   position: absolute;
   bottom: 55px;
-  left: 52px;
+  right: 45%;
+  width: 45%;
 }
 .album .highlight .photo-frame.left .img-box {
   background-color: #f2ebd8;
@@ -624,12 +735,40 @@ section {
   object-fit: cover;
   border-radius: 10px;
 }
+@media (max-width: 430px) {
+  .album .highlight {
+    min-height: 380px;
+  }
+  .album .highlight img.text-the {
+    width: 18%;
+    top: 5%;
+  }
+  .album .highlight h2.album-text {
+    font-size: 1.3rem;
+    top: 17%;
+  }
+  .album .highlight h2.oflove-text {
+    bottom: 20%;
+    left: 65%;
+    font-size: 1.3rem;
+  }
+  .album .slider .main-swiper {
+    height: 67vh;
+  }
+  .album .slider .thumb-swiper {
+    height: 100px;
+  }
+}
+@media (max-width: 375px) {
+  .album .highlight {
+    min-height: 336px;
+  }
+}
 
 .rsvp {
-  background: url("../../assets/images/bg/rsvp_bg.webp") no-repeat center/contain;
-  min-height: 580px;
+  background: url("../../assets/images/bg/rsvp_top.webp") no-repeat top/contain, url("../../assets/images/bg/rsvp_bottom.webp") no-repeat bottom/contain;
   width: 100%;
-  padding: 20px 85px;
+  padding: 100px 15%;
   margin: 80px 0;
   display: flex;
   flex-direction: column;
@@ -665,7 +804,9 @@ section {
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .rsvp .btn-yes {
@@ -750,6 +891,21 @@ section {
 .rsvp .submit-btn:active {
   transform: translateY(0);
 }
+@media (max-width: 430px) {
+  .rsvp {
+    padding: 80px 15%;
+    margin: 35px 0;
+  }
+  .rsvp .btn {
+    padding: 6px 15px;
+  }
+}
+@media (max-width: 375px) {
+  .rsvp .btn {
+    padding: 6px 10px;
+    font-size: 0.53rem;
+  }
+}
 
 .footer {
   background: url("../../assets/images/bg/end_pg.webp") no-repeat center/cover;
@@ -797,79 +953,8 @@ section {
   font-size: 0.55rem;
 }
 
-@media (max-width: 430px) {
-  .container {
-    font-size: 11px;
-  }
-  .intro .content .invitation .couple-names h2 {
-    font-size: 3rem;
-  }
-  .intro .content .location-time .time h2 {
-    font-size: 1.5rem;
-  }
-  .intro .content .location-time .venue-details .location-name {
-    font-size: 3.5rem;
-  }
-  .album .highlight {
-    min-height: 390px;
-  }
-  .album .highlight h2 {
-    font-size: 1.2rem;
-  }
-  .album .highlight h2.album-text {
-    top: 97px;
-    left: 47px;
-  }
-  .album .highlight img.text-the {
-    width: 50px;
-  }
-  .album .highlight .photo-frame.left {
-    left: 31px;
-  }
-  .album .highlight .photo-frame.right {
-    width: 230px;
-    aspect-ratio: 230/230;
-  }
-  .album .highlight .photo-frame.left {
-    width: 180px;
-    aspect-ratio: 180/180;
-  }
-  .intro .content {
-    height: 1942px;
-  }
-  .rsvp {
-    padding: 20px 78px;
-    margin: 40px 0;
-  }
-  .rsvp .btn {
-    padding: 6px 8px;
-  }
-  .rsvp textarea {
-    font-size: 0.6rem;
-  }
-}
 @media (max-width: 375px) {
   .container {
-    font-size: 9px;
-  }
-  .intro .content .invitation .couple-names h2 {
-    font-size: 2.5rem;
-  }
-  .intro .content .location-time .time h2 {
-    font-size: 1.4rem;
-  }
-  .intro .content {
-    height: 1865px;
-  }
-  .rsvp {
-    padding: 20px 78px;
-    margin: 40px 0;
-  }
-  .rsvp .btn {
-    font-size: 0.6rem;
-    padding: 6px 5px;
-  }
-  .rsvp textarea {
     font-size: 0.6rem;
   }
 }

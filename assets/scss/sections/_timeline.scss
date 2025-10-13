@@ -1,0 +1,53 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.timeline {
+    background: url("../../assets/images/bg/timeline_bg.webp") no-repeat center/contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 860px;
+    padding: 25px 15%;
+
+    .title {
+        font-family: $font-hero;
+        font-size: 3.8rem;
+        font-weight: normal;
+        padding-bottom: 45px;
+    }
+
+    .event {
+        padding-bottom: 28px;
+
+        .icon {
+            padding-bottom: 8px;
+
+            img {
+                width: 25px;
+                height: auto;
+            }
+        }
+
+        p.time {
+            margin-bottom: 4px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        min-height: 730px;
+        .title {
+            font-size: 2.8rem;
+            padding-bottom: 30px;
+        }
+
+        .event {
+            padding-bottom: 15px;
+
+            p.time {
+                margin-bottom: 2px;
+            }
+        }
+    }
+}

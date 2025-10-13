@@ -1,0 +1,143 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.gallery {
+    width: 100%;
+    height: 900px;
+    margin: 50px 0;
+    background: url("../../assets/images/bg/gallerey_bg.webp") no-repeat center/contain;
+    @include flex-center;
+
+    .gallery-grid {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img.photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 4px;
+    }
+
+    .row1 {
+        display: flex;
+        justify-content: center;
+
+        .column1 {
+            display: flex;
+            // justify-content: end;
+            .photo-box {
+                width: 100%;
+                max-width: 215px;
+                aspect-ratio: 215 / 336;
+                overflow: hidden;
+            }
+        }
+
+        .column2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            .row {
+                text-align: center;
+            }
+         
+            img.icon {
+                width: 86px;
+                height: auto;
+                padding-bottom: 15px;
+                object-fit: cover;
+            }
+
+            .photo-box {
+                width: 100%;
+                max-width: 105px;
+                aspect-ratio: 105 / 162;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .row2 {
+        display: flex;
+        justify-content: center;
+
+        .column1 {
+            .row:first-child {
+                .photo-box {
+                    width: 100%;
+                    max-width: 162px;
+                    aspect-ratio: 162 / 251;
+                    overflow: hidden;
+                }
+            }
+
+            .row:last-child {
+                // @include flex-center;
+
+                img.icon {
+                    width: 104px;
+                    height: auto;
+                    object-fit: cover;
+                    padding-top: 40px;
+                }
+            }
+        }
+
+        .column2 {
+            .row:first-child {
+                .photo-box {
+                    width: 100%;
+                    max-width: 234px;
+                    aspect-ratio: 234 / 157;
+                    overflow: hidden;
+                }
+            } 
+
+            .row:last-child {
+                .photo-box {
+                    width: 100%;
+                    max-width: 181px;
+                    aspect-ratio: 181 / 259;
+                    overflow: hidden;
+                }
+            } 
+
+        }
+    }
+
+    @media (max-width: 430px) {
+        height: 820px;
+        margin: 0;
+        .gallery-grid {
+            padding: 15px;
+        }
+        .row1 {
+            width: 75%;
+            .column1 {
+               
+            }
+            .column2 {
+                img.icon {
+                    width: 60px;
+                }
+            }
+        }
+
+        .row2 {
+            width: 85%;
+            .column1 {
+               text-align: center;
+            }
+            .column2 {
+                img.icon {
+                    width: 60px;
+                }
+            }
+        }
+    }
+}
