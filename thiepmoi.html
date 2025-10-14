@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anh & Van</title>
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <!-- Swiper.js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="dist/css/main.css" />
@@ -18,15 +21,15 @@
     <section class="cover">
       <div class="content">
         <div class="divider">
-          <img class="divider-icon top" src="assets/images/icons/divider_top.png" alt="" />
+          <img class="divider-icon top" data-aos="fade-in" src="assets/images/icons/divider_top.png" alt="" />
         </div>
-        <p class="subtitle">WELCOME TO OUR WEDDING</p>
-        <h2 class="names">Quốc Anh và Khánh Vân</h2>
-        <div class="photo-frame">
+        <p class="subtitle" data-aos="fade-down">WELCOME TO OUR WEDDING</p>
+        <h2 class="names" data-aos="fade-up">Quốc Anh và Khánh Vân</h2>
+        <div class="photo-frame" data-aos="flip-left">
           <img src="assets/images/hero.png" alt="Couple Photo" />
         </div>
-        <p class="subtext">Always and forever</p>
-        <div class="divider">
+        <p class="subtext" data-aos="fade-down">Always and forever</p>
+        <div class="divider" data-aos="fade-in">
           <img class="divider-icon bottom" src="assets/images/icons/divider_top.png" alt="" />
         </div>
       </div>
@@ -40,11 +43,11 @@
         </div>
         <div class="invitation">
           <div class="logo">
-            <div class="box-img">
+            <div class="box-img" data-aos="flip-left">
               <img src="assets/images/logo.webp" alt="" />
             </div>
           </div>
-          <div class="family-info">
+          <div class="family-info" data-aos="fade-down">
             <p>
               NHÀ TRAI: ÔNG TRẦN QUỐC ĐỨC - BÀ TRẦN THỊ TUYẾT
               <img src="assets/images/icons/hoasen.webp" alt="" />
@@ -371,6 +374,19 @@
       </div>
     </section> -->
   </div>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: false,          // chỉ chạy 1 lần
+      easing: 'ease-out',  // easing nhẹ
+      offset: 120,
+    });
+  </script>
+
+
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
