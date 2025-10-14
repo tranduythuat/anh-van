@@ -165,7 +165,7 @@
 
     @media (max-width: 430px) {
         .content {
-            height: 1742px;
+            height: 1783px;
 
             .invitation {
                 .logo {
@@ -177,6 +177,7 @@
                     padding-bottom: 10px;
     
                     p {
+                        font-size: .7rem;
                         line-height: 1.5;
                     }
     
@@ -230,6 +231,19 @@
                 }
             } 
 
+        }
+    }
+
+    @media (max-width: 380px) {
+        .content {
+            height: 1732px;
+            .invitation {
+                .family-info {
+                    p {
+                        font-size: .6rem;
+                    }
+                }
+            }
         }
     }
 }

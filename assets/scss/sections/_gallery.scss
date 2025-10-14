@@ -77,8 +77,6 @@
             }
 
             .row:last-child {
-                // @include flex-center;
-
                 img.icon {
                     width: 104px;
                     height: auto;
@@ -112,9 +110,9 @@
 
     @media (max-width: 430px) {
         height: 820px;
-        margin: 0;
+        margin: 25px 0;
         .gallery-grid {
-            padding: 15px;
+            padding: 33px;
         }
         .row1 {
             width: 75%;
@@ -132,12 +130,23 @@
             width: 85%;
             .column1 {
                text-align: center;
+                .row:last-child {
+                    img.icon {
+                        width: 85px;
+                    }
+                }
             }
             .column2 {
                 img.icon {
                     width: 60px;
                 }
             }
+        }
+    }
+
+    @media (max-width: 380px) {
+        .gallery-grid {
+            padding: 18px;
         }
     }
 }
