@@ -128,14 +128,15 @@
             .swiper-slide {
                 width: 25%;
                 height: 100%;
-                opacity: 0.4;
+                opacity: 0.7;
                 cursor: pointer;
                 transition: opacity 0.3s;
             }
 
             .swiper-slide-thumb-active {
                 opacity: 1;
-                border: 2px solid #fff;
+                border-radius: 10px;
+                border: 1px solid $primary-color;
             }
 
             img {
