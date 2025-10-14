@@ -405,7 +405,7 @@ section {
   aspect-ratio: 234/157;
 }
 .gallery .row2 .column2 .row:last-child .photo-box {
-  width: 100%;
+  width: 82%;
   max-width: 181px;
   aspect-ratio: 181/259;
 }
@@ -424,7 +424,7 @@ section {
     width: 60px;
   }
   .gallery .row2 {
-    width: 85%;
+    width: 95%;
   }
   .gallery .row2 .column1 {
     text-align: center;
