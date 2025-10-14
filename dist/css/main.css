@@ -334,7 +334,7 @@ section {
 
 .gallery {
   width: 100%;
-  height: 900px;
+  height: 936px;
   margin: 50px 0;
   background: url("../../assets/images/bg/gallerey_bg.webp") no-repeat center/contain;
   display: flex;
@@ -351,7 +351,6 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 4px;
 }
 .gallery .row1 {
   display: flex;
@@ -359,11 +358,12 @@ section {
 }
 .gallery .row1 .column1 {
   display: flex;
+  padding-right: 4px;
 }
 .gallery .row1 .column1 .photo-box {
   width: 100%;
+  height: 100%;
   max-width: 215px;
-  aspect-ratio: 215/336;
 }
 .gallery .row1 .column2 {
   display: flex;
@@ -381,33 +381,63 @@ section {
 }
 .gallery .row1 .column2 .photo-box {
   width: 100%;
+  height: 100%;
   max-width: 105px;
-  aspect-ratio: 105/162;
+  overflow: hidden;
+}
+.gallery .row1 .column2 .photo-box img {
+  transform: scale(120%) translateY(-10px);
 }
 .gallery .row2 {
   display: flex;
   justify-content: center;
 }
+.gallery .row2 .column1 {
+  padding: 4px;
+}
 .gallery .row2 .column1 .row:first-child .photo-box {
   width: 100%;
   max-width: 162px;
   aspect-ratio: 162/251;
+  overflow: hidden;
+}
+.gallery .row2 .column1 .row:first-child .photo-box img {
+  transform: scale(250%);
+}
+.gallery .row2 .column1 .row:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .gallery .row2 .column1 .row:last-child img.icon {
   width: 104px;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   padding-top: 40px;
 }
+.gallery .row2 .column2 {
+  padding-top: 4px;
+}
+.gallery .row2 .column2 .row:first-child {
+  padding-bottom: 4px;
+}
 .gallery .row2 .column2 .row:first-child .photo-box {
   width: 100%;
+  height: 100%;
   max-width: 234px;
   aspect-ratio: 234/157;
+}
+.gallery .row2 .column2 .row:first-child .photo-box img {
+  object-position: 100% 100%;
 }
 .gallery .row2 .column2 .row:last-child .photo-box {
   width: 82%;
   max-width: 181px;
-  aspect-ratio: 181/259;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery .row2 .column2 .row:last-child .photo-box img {
+  transform: scale(130%) translateY(-30px);
 }
 @media (max-width: 430px) {
   .gallery {
@@ -706,6 +736,7 @@ section {
   width: 100%;
   height: 75%;
   object-fit: cover;
+  object-position: 50% 20%;
 }
 .album .slider .swiper {
   width: 95%;
