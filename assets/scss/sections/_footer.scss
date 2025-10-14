@@ -1,0 +1,51 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.footer {
+    background: url('../../assets/images/bg/end_pg.webp') no-repeat center/cover;
+    width: 100%;
+    min-height: 730px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    .logo {
+        margin-top: 20px;
+        width: 100%;
+        img {
+            width: 142px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .qr {
+        width: 100%;
+        p {
+            text-transform: uppercase;
+            padding: 55px 84px 0;
+            line-height: 1.5;
+        }
+        img {
+            width: 108px;
+            height: auto;
+            margin: 40px;
+        }
+    }
+
+    p.thanks {
+        padding: 0 45px;
+    }
+
+    p.credits {
+        font-family: "UVNKeChuyen3", sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        padding: 15px 0 60px;
+    }
+
+    p.text-end {
+        text-transform: uppercase;
+        font-size: 0.55rem;
+    }
+}

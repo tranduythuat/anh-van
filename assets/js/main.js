@@ -4,8 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 // Gọi các hiệu ứng có sẵn
 document.addEventListener("DOMContentLoaded", () => {
   gsapFlipIn(".animate-flip");
-  gsapFadeIn(".animate-fade");
-
+  
   const thumbSwiper = new Swiper(".thumb-swiper", {
     spaceBetween: 10,
     slidesPerView: 4,
