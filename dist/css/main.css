@@ -253,6 +253,7 @@ section {
   padding: 20px 0;
 }
 .intro .content .location-time .venue-details .map-link a.map-button {
+  color: #806331;
   text-decoration: none;
   padding: 5px 95px;
   border-radius: 15px;
