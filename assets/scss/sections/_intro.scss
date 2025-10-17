@@ -5,22 +5,11 @@
     padding: 25px 0;
 
     .content {
+        background: url('../../assets/images/bg/bg1.png') no-repeat center/cover;
         width: 100%;
-        height: 2010px;
+        height: 2127px;
+        padding: 0 4rem;
         position: relative;
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
 
         .invitation {
             width: 100%;
@@ -32,7 +21,7 @@
             .logo {
                 width: 100%;
                 @include flex-center;
-                padding: 60px 0 60px;
+                padding: 70px 0 60px;
 
                 .box-img {
                     width: 164px;
@@ -45,7 +34,7 @@
             }
 
             .family-info {
-                padding-bottom: 15px;
+                padding-bottom: 20px;
 
                 p {
                     line-height: 1.8;
@@ -64,19 +53,20 @@
             }
 
             .couple-names {
-                padding: 15px 0;
+                padding: 20px 0;
 
                 h2 {
                     font-family: $font-hero;
-                    font-size: 3.5rem;
+                    font-size: 3.3rem;
                     letter-spacing: 1.2px;
                     font-weight: 300;
-                    margin: 15px 0;
+                    margin: 20px 0;
                 }
             }
 
             .divider {
                 width: 100%;
+                padding: 20px;
 
                 .divider-icon {
                     width: 60px;
@@ -100,16 +90,17 @@
 
             .photo-area {
                 width: 100%;
+                padding-top: 10px;
 
                 img.couple-img {
-                    width: 237px;
+                    width: 62%;
                     height: auto;
                     object-fit: cover;
                 }
             }
 
             .invitation-text {
-                padding: 50px;
+                padding: 50px 0;
 
                 p {
                     line-height: 1.8;
@@ -167,6 +158,7 @@
     @media (max-width: 430px) {
         .content {
             height: 1783px;
+            padding: 0 3.4rem;
 
             .invitation {
                 .logo {
@@ -178,7 +170,7 @@
                     padding-bottom: 10px;
     
                     p {
-                        font-size: .7rem;
+                        font-size: .65rem;
                         line-height: 1.5;
                     }
     
@@ -191,6 +183,7 @@
                 .announcement {
                     p {
                         line-height: 1.5;
+                        font-size: .65rem;
                     }
                 }
     
@@ -198,7 +191,7 @@
                     padding: 20px 0;
     
                     h2 {
-                        font-size: 2.5rem;
+                        font-size: 2.85rem;
                         letter-spacing: 1px;
                         margin: 10px 0;
                     }
@@ -220,15 +213,42 @@
             }
 
             .location-time {
-                .time h2 {
-                    font-size: 1.3rem;
-                }
-                
                 .invitation-text {
-                    padding: 40px;
+                    padding: 30px 20px;
+                    font-size: .65rem;
                 }
-                .venue-details .location-name {
-                    font-size: 2.5rem;
+
+                .time {
+                    h2 {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                .venue-details {
+                    .divider {
+                        padding: 40px 0 40px;    
+                        .divider-icon {
+                            width: 60px;
+                            height: auto;
+                        }
+                    }
+    
+                    p.announcement {
+                        padding-bottom: 15px;
+                    }
+    
+                    .location-name {
+                        font-size: 3.6rem;
+                        padding-bottom: 5px;
+                    }
+    
+                    .map-link {
+                        padding: 15px 0;
+                        a.map-button {
+                            text-decoration: none;
+                            padding: 5px 80px;
+                        }
+                    }
                 }
             } 
 
@@ -236,15 +256,58 @@
     }
 
     @media (max-width: 380px) {
+        padding: 15px 0;
         .content {
-            height: 1732px;
+            height: 1595px;
+            padding: 0 2.5rem;
+
             .invitation {
+                .logo {
+                    padding: 50px 0 40px;
+                    .box-img {
+                        width: 110px;
+                    }
+                }
+
                 .family-info {
                     p {
-                        font-size: .6rem;
+                        font-size: .55rem;
+                    }
+                }
+
+                .announcement {
+                    p {
+                        line-height: 1.5;
+                        font-size: .55rem;
+                    }
+                }
+
+                .couple-names {
+                    h2 {
+                        font-size: 2.5rem;
                     }
                 }
             }
+
+
+            .location-time {
+                .top-detail {
+                    h2 {
+                        font-size: 1.65rem;
+                    }
+                }
+                .time h2 {
+                    font-size: 1.2rem;
+                }
+                
+                .invitation-text {
+                    padding: 30px 0;
+                    font-size: .6rem;
+                }
+                .venue-details .location-name {
+                    font-size: 2.5rem;
+                }
+            } 
         }
     }
 }
@@ -264,8 +327,7 @@
         position: relative;
 
         img {
-            position: absolute;
-            top: -10px;
+            margin-top: 25px;
         }
     }
 }
