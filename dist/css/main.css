@@ -319,6 +319,7 @@ section {
 
 .intro {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .intro .content {
   background: url("../../assets/images/bg/bg1.png") no-repeat top/contain;
@@ -491,7 +492,125 @@ section {
   .intro .content .invitation .family-info {
     padding-bottom: 20px;
   }
+  .intro .content .location-time .top-detail {
+    padding: 40px 0;
+  }
+  .intro .content .location-time .photo-area {
+    padding-top: 5px;
+  }
+  .intro .content .location-time .photo-area img.couple-img {
+    width: 60%;
+  }
+  .intro .content .location-time .invitation-text {
+    padding: 40px 0;
+  }
+  .intro .content .location-time .venue-details .divider {
+    padding: 40px 0 30px;
+  }
+  .intro .content .location-time .venue-details p.announcement {
+    padding-bottom: 15px;
+  }
+  .intro .content .location-time .venue-details .map-link {
+    padding: 15px 0;
+  }
 }
+@media (max-width: 440px) {
+  .intro .content {
+    height: 1860px;
+  }
+}
+@media (max-width: 431px) {
+  .intro .content {
+    padding: 0 10%;
+    height: 1820px;
+  }
+  .intro .content .invitation .logo {
+    padding: 70px 0 50px;
+  }
+  .intro .content .invitation .logo .box-img {
+    width: 30%;
+  }
+  .intro .content .invitation .family-info {
+    padding-bottom: 20px;
+  }
+  .intro .content .location-time .top-detail {
+    padding: 40px 0;
+  }
+  .intro .content .location-time .photo-area {
+    padding-top: 5px;
+  }
+  .intro .content .location-time .photo-area img.couple-img {
+    width: 60%;
+  }
+  .intro .content .location-time .invitation-text {
+    padding: 40px 0;
+  }
+  .intro .content .location-time .venue-details .divider {
+    padding: 40px 0 30px;
+  }
+  .intro .content .location-time .venue-details p.announcement {
+    padding-bottom: 15px;
+  }
+  .intro .content .location-time .venue-details .map-link {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 415px) {
+  .intro .content {
+    padding: 0 10%;
+    height: 1740px;
+  }
+}
+@media (max-width: 391px) {
+  .intro .content {
+    padding: 0 10%;
+    height: 1680px;
+  }
+  .intro .content .invitation .logo {
+    padding: 60px 0 40px;
+  }
+  .intro .content .invitation .logo .box-img {
+    width: 30%;
+  }
+  .intro .content .invitation .family-info {
+    padding-bottom: 15px;
+  }
+  .intro .content .invitation .couple-names {
+    padding: 10px 0;
+  }
+  .intro .content .location-time .top-detail {
+    padding: 30px 0;
+  }
+  .intro .content .location-time .photo-area {
+    padding-top: 5px;
+  }
+  .intro .content .location-time .photo-area img.couple-img {
+    width: 60%;
+  }
+  .intro .content .location-time .invitation-text {
+    padding: 30px 0;
+  }
+  .intro .content .location-time .venue-details .divider {
+    padding: 30px 0 20px;
+  }
+  .intro .content .location-time .venue-details p.announcement {
+    padding-bottom: 15px;
+  }
+  .intro .content .location-time .venue-details .map-link {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 376px) {
+  .intro .content {
+    height: 1600px;
+  }
+}
+@media (max-width: 361px) {
+  .intro .content {
+    height: 1530px;
+  }
+}
+
 .divider-paint {
   width: 100%;
   min-height: 380px;

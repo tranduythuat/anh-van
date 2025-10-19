@@ -3,6 +3,7 @@
 
 .intro {
     margin-top: 20px;
+    margin-bottom: 20px;
 
     .content {
         background: url('../../assets/images/bg/bg1.png') no-repeat top/contain;
@@ -278,22 +279,22 @@
 
             .location-time {
                 .top-detail {
-                    // padding: 50px 0;
+                    padding: 40px 0;
 
                     h2 {
                     }
                 }
 
                 .photo-area {
-                    // padding-top: 10px;
+                    padding-top: 5px;
 
                     img.couple-img {
-                        // width: 60%;
+                        width: 60%;
                     }
                 }
 
                 .invitation-text {
-                    // padding: 50px 0;
+                    padding: 40px 0;
 
                     p {
                     }
@@ -307,7 +308,7 @@
 
                 .venue-details {
                     .divider {
-                        // padding: 50px 0 40px;
+                        padding: 40px 0 30px;
 
                         .divider-icon {
                             // width: 70px;
@@ -315,7 +316,7 @@
                     }
 
                     p.announcement {
-                        // padding-bottom: 20px;
+                        padding-bottom: 15px;
                     }
 
                     .location-name {
@@ -323,11 +324,7 @@
                     }
 
                     .map-link {
-                        // padding: 20px 0;
-
-                        a.map-button {
-                            // padding: 5px 95px;
-                        }
+                        padding: 15px 0;
                     }
                 }
             }
@@ -335,235 +332,223 @@
 
     }
 
-    @media (max-width: 430px) {}
+    @media (max-width: 440px) {
+        .content {
+            height: 1860px;
+        }
+    }
 
-    // @media (max-width: 440px) {
-    //     .content {
-    //         height: 1600px;
-    //         padding: 0 0;
+    @media (max-width: 431px) {
+        .content {
+            padding: 0 10%;
+            height: 1820px;
 
-    //         .invitation {
-    //             .logo {
-    //                 padding: 60px 0 50px;
-    //                 .box-img {
-    //                     width: 113px;
-    //                 }
-    //             }
-    //             .family-info {
-    //                 padding-bottom: 10px;
+            .invitation {
+                .logo {
+                    padding: 70px 0 50px;
 
-    //                 p {
-    //                     line-height: 1.5;
-    //                 }
+                    .box-img {
+                        width: 30%;
+                    }
+                }
 
-    //                 img {
-    //                     width: 14px;
-    //                     height: auto;
-    //                 }
-    //             }
+                .family-info {
+                    padding-bottom: 20px;
 
-    //             .announcement {
-    //                 p {
-    //                     line-height: 1.5;
-    //                     font-size: .65rem;
-    //                 }
-    //             }
+                    p {
+                    }
 
-    //             .couple-names {
-    //                 padding: 20px 0;
+                    img {
+                        // width: 16px;
+                        // height: auto;
+                    }
+                }
 
-    //                 h2 {
-    //                     letter-spacing: 1px;
-    //                     margin: 10px 0;
-    //                 }
-    //             }
+                .announcement {
+                    p {
+                        // font-size: clamp(5px, 2.3vw, 11px);
+                        // line-height: 1.8;
+                    }
+                }
 
-    //             .divider {
-    //                 .divider-icon {
-    //                     width: 45px;
-    //                 }
-    //             }
+                .couple-names {
+                    // padding: 20px 0;
 
-    //             .time {
-    //                 h2 {
-    //                     font-size: 1.2rem;
-    //                     font-weight: 300;
-    //                     margin: 5px;
-    //                 }
-    //             }
-    //         }
+                    h2 {
+                        // margin: 20px 0;
+                    }
+                }
 
-    //         .location-time {
-    //             .invitation-text {
-    //                 padding: 30px 20px;
-    //                 font-size: .65rem;
-    //             }
+                .divider {
+                    // padding: 20px;
 
-    //             .time {
-    //                 h2 {
-    //                     font-size: 1.3rem;
-    //                 }
-    //             }
+                    .divider-icon {
+                        // width: 60px;
+                    }
+                }
+            }
 
-    //             .photo-area img.couple-img {
-    //                 width: 45%; 
-    //             }
+            .location-time {
+                .top-detail {
+                    padding: 40px 0;
 
-    //             .venue-details {
-    //                 .divider {
-    //                     padding: 24px 0;    
-    //                     .divider-icon {
-    //                         width: 60px;
-    //                         height: auto;
-    //                     }
-    //                 }
+                    h2 {
+                    }
+                }
 
-    //                 p.announcement {
-    //                     padding-bottom: 15px;
-    //                 }
+                .photo-area {
+                    padding-top: 5px;
 
-    //                 .location-name {
-    //                     padding-bottom: 5px;
-    //                 }
+                    img.couple-img {
+                        width: 60%;
+                    }
+                }
 
-    //                 .map-link {
-    //                     padding: 15px 0;
-    //                     a.map-button {
-    //                         text-decoration: none;
-    //                         padding: 5px 80px;
-    //                     }
-    //                 }
-    //             }
-    //         } 
+                .invitation-text {
+                    padding: 40px 0;
 
-    //     }
-    // }
+                    p {
+                    }
+                }
 
-    // @media (max-width: 380px) {
-    //     padding: 15px 0 0px;
-    //     .content {
-    //         height: 1487px;
-    //         padding: 0 2.5rem;
+                .time {
+                    h2 {
+                        // margin: 5px;
+                    }
+                }
 
-    //         .invitation {
-    //             .logo {
-    //                 padding: 50px 0 40px;
-    //                 .box-img {
-    //                     width: 110px;
-    //                 }
-    //             }
+                .venue-details {
+                    .divider {
+                        padding: 40px 0 30px;
 
-    //             .family-info {
-    //                 p {
-    //                     // font-size: .55rem;
-    //                 }
-    //             }
+                        .divider-icon {
+                            // width: 70px;
+                        }
+                    }
 
-    //             .announcement {
-    //                 p {
-    //                     line-height: 1.5;
-    //                     font-size: .55rem;
-    //                 }
-    //             }
+                    p.announcement {
+                        padding-bottom: 15px;
+                    }
 
-    //             .couple-names {
-    //                 h2 {
-    //                     // font-size: 2.5rem;
-    //                 }
-    //             }
-    //         }
+                    .location-name {
+                        // padding-bottom: 10px;
+                    }
 
+                    .map-link {
+                        padding: 15px 0;
+                    }
+                }
+            }
+        }
+    }
 
-    //         .location-time {
-    //             .top-detail {
-    //                 h2 {
-    //                     font-size: 1.65rem;
-    //                 }
-    //             }
-    //             .time h2 {
-    //                 font-size: 1.2rem;
-    //             }
+    @media (max-width: 415px) {
+        .content {
+            padding: 0 10%;
+            height: 1740px;
+        }
+    }
 
-    //             .invitation-text {
-    //                 padding: 20px 0;
-    //                 font-size: .5rem;
-    //             }
-    //             .venue-details .location-name {
-    //                 font-size: 2.5rem;
-    //             }
+    @media (max-width: 391px) {
+        .content {
+            padding: 0 10%;
+            height: 1680px;
 
-    //             .venue-details .divider {
-    //                 padding: 30px;
-    //             }
-    //         } 
-    //     }
-    // }
+            .invitation {
+                .logo {
+                    padding: 60px 0 40px;
 
-    //  @media (max-width: 351px) {
-    //     .content {
-    //         height: 1380px;
+                    .box-img {
+                        width: 30%;
+                    }
+                }
 
-    //         .invitation .divider {
-    //             padding: 0;
-    //         }
-    //         .location-time .venue-details .location-name {
-    //             font-size: 2rem;
-    //         }
-    //     }
-    // }
+                .family-info {
+                    padding-bottom: 15px;
+                }
 
-    // @media (max-width: 331px) {
-    //     .content {
-    //         height: 1400px;
+                .couple-names {
+                    padding: 10px 0;
 
-    //         .invitation .divider {
-    //             padding: 0;
-    //         }
-    //         .location-time .venue-details .location-name {
-    //             font-size: 2rem;
-    //         }
-    //     }
-    // }
+                    h2 {
+                        // margin: 20px 0;
+                    }
+                }
 
-    // @media (max-width: 321px) {
-    //     .content {
-    //         height: 1274px;
-    //         .invitation .logo .box-img img {
-    //             width: 81%;
-    //         }
+                .divider {
+                    // padding: 20px;
 
-    //         .intro .content .invitation .couple-names {
-    //             padding: 0;
-    //         }
+                    .divider-icon {
+                        // width: 60px;
+                    }
+                }
+            }
 
-    //         .invitation .divider {
-    //             padding: 0;
-    //         }
+            .location-time {
+                .top-detail {
+                    padding: 30px 0;
 
-    //         .invitation .divider .divider-icon {
-    //             width: 40px;
-    //         }
+                    h2 {
+                    }
+                }
 
-    //         .location-time .photo-area img.couple-img {
-    //             width: 54%;
-    //         }
+                .photo-area {
+                    padding-top: 5px;
 
-    //         .location-time .top-detail {
-    //             padding: 30px 0;
-    //         }
+                    img.couple-img {
+                        width: 60%;
+                    }
+                }
 
-    //         .location-time .venue-details .divider .divider-icon {
-    //             width: 45px;
-    //         }
+                .invitation-text {
+                    padding: 30px 0;
 
-    //         .location-time .venue-details p.announcement {
-    //             padding-bottom: 5px;
-    //         }
-    //         .location-time .venue-details .location-name {
-    //             font-size: 2rem;
-    //         }
-    //     }
-    // }
+                    p {
+                    }
+                }
+
+                .time {
+                    h2 {
+                        // margin: 5px;
+                    }
+                }
+
+                .venue-details {
+                    .divider {
+                        padding: 30px 0 20px;
+
+                        .divider-icon {
+                            // width: 70px;
+                        }
+                    }
+
+                    p.announcement {
+                        padding-bottom: 15px;
+                    }
+
+                    .location-name {
+                        // padding-bottom: 10px;
+                    }
+
+                    .map-link {
+                        padding: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 376px) {
+        .content {
+            height: 1600px;
+        }
+    }
+
+    @media (max-width: 361px) {
+        .content {
+            height: 1530px;
+        }
+    }
 }
 
 .divider-paint {
