@@ -424,7 +424,7 @@ section {
 }
 .intro .content .location-time .venue-details .location-name {
   font-family: "UVNBUCTHU", sans-serif;
-  font-size: 3.8rem;
+  font-size: 10.8vw;
   font-weight: 300;
   letter-spacing: 1.2px;
   padding-bottom: 10px;
@@ -450,7 +450,7 @@ section {
 }
 @media (max-width: 440px) {
   .intro .content {
-    height: 1730px;
+    height: 1652px;
     padding: 0 0;
   }
   .intro .content .invitation .logo {
@@ -499,7 +499,7 @@ section {
     width: 45%;
   }
   .intro .content .location-time .venue-details .divider {
-    padding: 40px 0 40px;
+    padding: 24px 0;
   }
   .intro .content .location-time .venue-details .divider .divider-icon {
     width: 60px;
@@ -509,7 +509,6 @@ section {
     padding-bottom: 15px;
   }
   .intro .content .location-time .venue-details .location-name {
-    font-size: 3.6rem;
     padding-bottom: 5px;
   }
   .intro .content .location-time .venue-details .map-link {
@@ -676,12 +675,13 @@ section {
 .gallery .row2 .column2 .row:last-child .photo-box img {
   transform: scale(130%) translateY(-30px);
 }
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   .gallery {
-    height: 617px;
+    margin: 10px 0 40px;
+    height: 700px;
   }
   .gallery .gallery-grid {
-    padding: 33px;
+    padding: 0 33px;
   }
   .gallery .row1 {
     width: 75%;
@@ -700,6 +700,15 @@ section {
   }
   .gallery .row2 .column2 img.icon {
     width: 60px;
+  }
+}
+@media (max-width: 391px) {
+  .gallery {
+    height: 600px;
+    margin: 10px 0 50px;
+  }
+  .gallery .gallery-grid {
+    padding: 10px 25px;
   }
 }
 @media (max-width: 380px) {

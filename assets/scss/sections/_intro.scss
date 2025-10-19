@@ -133,7 +133,7 @@
 
                 .location-name {
                     font-family: $font-hero;
-                    font-size: 3.8rem;
+                    font-size: 10.8vw;
                     font-weight: 300;
                     letter-spacing: 1.2px;
                     padding-bottom: 10px;
@@ -174,7 +174,7 @@
 
     @media (max-width: 440px) {
         .content {
-            height: 1730px;
+            height: 1652px;
             padding: 0 0;
 
             .invitation {
@@ -246,7 +246,7 @@
 
                 .venue-details {
                     .divider {
-                        padding: 40px 0 40px;    
+                        padding: 24px 0;    
                         .divider-icon {
                             width: 60px;
                             height: auto;
@@ -258,7 +258,6 @@
                     }
     
                     .location-name {
-                        font-size: 3.6rem;
                         padding-bottom: 5px;
                     }
     
