@@ -25,7 +25,7 @@
 body {
   font-family: "iCielBCOldStyle", sans-serif;
   color: #806331;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,11 +317,8 @@ section {
   transform: rotateX(180deg);
 }
 
-.intro {
-  padding: 25px 0;
-}
 .intro .content {
-  background: url("../../assets/images/bg/bg1.png") no-repeat top/contain;
+  background: url("../../assets/images/bg/bg1.png") no-repeat center/cover;
   width: 100%;
   height: 2100px;
   padding: 0 11%;
@@ -424,7 +421,7 @@ section {
 }
 .intro .content .location-time .venue-details .location-name {
   font-family: "UVNBUCTHU", sans-serif;
-  font-size: 10.8vw;
+  font-size: 3.3rem;
   font-weight: 300;
   letter-spacing: 1.2px;
   padding-bottom: 10px;
@@ -441,16 +438,22 @@ section {
   border: solid 1px #806331;
 }
 @media (max-width: 499px) {
+  .intro .content {
+    height: 2000px;
+  }
   .intro .content .invitation .family-info p {
     font-size: 2.3vw;
   }
   .intro .content .invitation .couple-names h2 {
     font-size: 10.3vw;
   }
+  .intro .content .location-time .venue-details .location-name {
+    font-size: 10.8vw;
+  }
 }
 @media (max-width: 440px) {
   .intro .content {
-    height: 1674px;
+    height: 1600px;
     padding: 0 0;
   }
   .intro .content .invitation .logo {
@@ -521,10 +524,10 @@ section {
 }
 @media (max-width: 380px) {
   .intro {
-    padding: 15px 0 30px;
+    padding: 15px 0 0px;
   }
   .intro .content {
-    height: 1514px;
+    height: 1487px;
     padding: 0 2.5rem;
   }
   .intro .content .invitation .logo {
@@ -544,11 +547,68 @@ section {
     font-size: 1.2rem;
   }
   .intro .content .location-time .invitation-text {
-    padding: 30px 0;
-    font-size: 0.6rem;
+    padding: 20px 0;
+    font-size: 0.5rem;
   }
   .intro .content .location-time .venue-details .location-name {
     font-size: 2.5rem;
+  }
+  .intro .content .location-time .venue-details .divider {
+    padding: 30px;
+  }
+}
+@media (max-width: 351px) {
+  .intro .content {
+    height: 1380px;
+  }
+  .intro .content .invitation .divider {
+    padding: 0;
+  }
+  .intro .content .location-time .venue-details .location-name {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 331px) {
+  .intro .content {
+    height: 1400px;
+  }
+  .intro .content .invitation .divider {
+    padding: 0;
+  }
+  .intro .content .location-time .venue-details .location-name {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 321px) {
+  .intro .content {
+    height: 1274px;
+  }
+  .intro .content .invitation .logo .box-img img {
+    width: 81%;
+  }
+  .intro .content .intro .content .invitation .couple-names {
+    padding: 0;
+  }
+  .intro .content .invitation .divider {
+    padding: 0;
+  }
+  .intro .content .invitation .divider .divider-icon {
+    width: 40px;
+  }
+  .intro .content .location-time .photo-area img.couple-img {
+    width: 54%;
+  }
+  .intro .content .location-time .top-detail {
+    padding: 30px 0;
+  }
+  .intro .content .location-time .venue-details .divider .divider-icon {
+    width: 45px;
+  }
+  .intro .content .location-time .venue-details p.announcement {
+    padding-bottom: 5px;
+  }
+  .intro .content .location-time .venue-details .location-name {
+    font-size: 2rem;
   }
 }
 
