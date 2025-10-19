@@ -383,23 +383,23 @@
       </p>
       <form id="rsvpForm">
         <div class="button-group">
-            <input type="radio" name="attending" id="btnYes" value="yes" class="radio-input" checked>
+            <input type="radio" name="confirm" id="btnYes" value="yes" class="radio-input" checked>
             <label for="btnYes" class="btn btn-yes" data-aos="fade-up">Sẽ tham dự</label>
             
-            <input type="radio" name="attending" id="btnNo" value="no" class="radio-input">
+            <input type="radio" name="confirm" id="btnNo" value="no" class="radio-input">
             <label for="btnNo" class="btn btn-no" data-aos="fade-up" data-aos-delay="300">Không tham dự</label>
         </div>
 
         <div class="form-group" data-aos="fade-right" data-aos-delay="200">
-            <input type="text" placeholder="Tên Khách Mời" required>
+            <input type="text" placeholder="Tên Khách Mời" name="name" required>
         </div>
 
         <div class="form-group" data-aos="fade-right" data-aos-delay="400">
-            <input type="text" placeholder="Số Người Đi Kèm" required>
+            <input type="text" placeholder="Số Người Đi Kèm"  name="guest_number">
         </div>
 
         <div class="form-group" data-aos="fade-right" data-aos-delay="600">
-            <textarea placeholder="HÃY GỬI LỜI CHÚC ĐẾN CÔ DÂU VÀ CHÚ RỂ NHÉ"></textarea>
+            <textarea placeholder="HÃY GỬI LỜI CHÚC ĐẾN CÔ DÂU VÀ CHÚ RỂ NHÉ" name="wish"></textarea>
         </div>
 
         <button type="submit" data-aos="fade-down" data-aos-delay="700" class="submit-btn">Xác nhận</button>
@@ -427,6 +427,21 @@
         <img src="assets/images/sample.jpg" alt="demo" class="animate-flip" />
       </div>
     </section> -->
+
+    <button class="player" id="player-btn" aria-label="Play/Pause">
+        <svg id="iconSvg" alt="Music Icon" xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+            viewBox="0 0 16 16" fill="#806331">
+            <g fill="#806331" fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M14 7h-1v2.5a2.5 2.5 0 1 0 1 2V7Zm-2.5 3a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z" />
+                <path
+                    d="m13.469 2.001l-8 .5L5 3v7.5a2.5 2.5 0 1 0 1 2V6.47l7-.438V7h1V2.5l-.531-.499ZM13 3.032V5.03l-7 .438V3.47l7-.438ZM3.5 11a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z" />
+            </g>
+        </svg>
+    </button>
+    <div class="music-label">Click music</div>
+    <audio id="audio" preload="auto"
+        src="assets/musics/Elliot James Reay - I Think They Call This Love (Official Music Video).mp3" loop
+        type="audio/mpeg"></audio>
   </div>
 
   <!-- AOS -->
@@ -445,6 +460,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/gsap-animations.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

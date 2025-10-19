@@ -3,8 +3,8 @@
 
 .gallery {
     width: 100%;
-    height: 936px;
-    margin: 50px 0;
+    height: 800px;
+    margin: 10px 0 50px;
     // background: url("../../assets/images/bg/gallerey_bg.webp") no-repeat center/contain;
     @include flex-center;
 
@@ -130,8 +130,7 @@
     }
 
     @media (max-width: 430px) {
-        height: 820px;
-        margin: 25px 0;
+        height: 617px;
         .gallery-grid {
             padding: 33px;
         }
