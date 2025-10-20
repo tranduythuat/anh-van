@@ -26,13 +26,13 @@ body {
 /* music */
 .player {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 8px;
+    right: 8px;
     width: 45px;
     height:45px;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    background-color: transparent;
     border: none;
     outline: none;
     z-index: 9999;
@@ -45,25 +45,25 @@ body {
     fill: var(--text-title-color);
 }
 
-.music-label {
-    position: fixed;
-    bottom: 14px;
-    right: 20px;
-    width: 125px;
-    height: 36px;
-    background-color: #f2ebd8ff;
-    z-index: 999;
-    font-family: "SVN-GothamBook", sans-serif;
-    font-size: .9rem;
-    color: #806331;
-    display: flex;
-    text-align: right;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 17px 10px 10px;
-    border-radius: 25px;
-    opacity: .8;
-}
+// .music-label {
+//     position: fixed;
+//     bottom: 14px;
+//     right: 20px;
+//     width: 125px;
+//     height: 36px;
+//     // background-color: #f2ebd8ff;
+//     z-index: 999;
+//     font-family: "SVN-GothamBook", sans-serif;
+//     font-size: .9rem;
+//     color: #806331;
+//     display: flex;
+//     text-align: right;
+//     justify-content: flex-start;
+//     align-items: center;
+//     padding: 10px 17px 10px 10px;
+//     border-radius: 25px;
+//     opacity: .8;
+// }
 
 .spin {
     animation: spin 4s linear infinite;

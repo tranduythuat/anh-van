@@ -149,6 +149,17 @@
         }
     }
 
+    .slider .main-swiper .swiper-button-next,
+    .slider .main-swiper .swiper-button-prev {
+        color: #fffffe;
+    }   
+
+    .slider .main-swiper .swiper-button-next:after, 
+    .slider .main-swiper .swiper-button-prev:after {
+        font-size: 55px;
+        font-weight: 700;
+    }
+
     @media (max-width: 430px) {
         .highlight {
             min-height: 380px;
