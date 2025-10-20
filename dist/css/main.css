@@ -43,13 +43,13 @@ body {
 /* music */
 .player {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 8px;
+  right: 8px;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: transparent;
   border: none;
   outline: none;
   z-index: 9999;
@@ -60,26 +60,6 @@ body {
   width: 100%;
   height: 100%;
   fill: var(--text-title-color);
-}
-
-.music-label {
-  position: fixed;
-  bottom: 14px;
-  right: 20px;
-  width: 125px;
-  height: 36px;
-  background-color: #f2ebd8;
-  z-index: 999;
-  font-family: "SVN-GothamBook", sans-serif;
-  font-size: 0.9rem;
-  color: #806331;
-  display: flex;
-  text-align: right;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px 17px 10px 10px;
-  border-radius: 25px;
-  opacity: 0.8;
 }
 
 .spin {
@@ -1088,6 +1068,15 @@ section {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+.album .slider .main-swiper .swiper-button-next,
+.album .slider .main-swiper .swiper-button-prev {
+  color: #fffffe;
+}
+.album .slider .main-swiper .swiper-button-next:after,
+.album .slider .main-swiper .swiper-button-prev:after {
+  font-size: 55px;
+  font-weight: 700;
 }
 @media (max-width: 430px) {
   .album .highlight {
