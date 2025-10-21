@@ -549,6 +549,127 @@
             height: 1530px;
         }
     }
+
+    @media (max-width: 340px) {
+        .content {
+            height: 1400px;
+            .invitation {
+                .logo {
+                    padding: 60px 0 40px;
+
+                    .box-img {
+                        width: 30%;
+                    }
+                }
+
+                .family-info {
+                    padding-bottom: 20px;
+                }
+
+                .couple-names {
+                    padding: 10px 0;
+
+                    h2 {
+                        margin: 15px 0;
+                    }
+                }
+
+                .divider {
+                    padding: 15px;
+
+                    .divider-icon {
+                        width: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 330px) {
+        .content {
+            padding: 0 5%;
+            height: 1300px;
+
+            .invitation {
+                .logo {
+                    padding: 50px 0 40px;
+
+                    .box-img {
+                        width: 27%;
+                    }
+                }
+
+                .family-info {
+                    padding-bottom: 15px;
+                }
+
+                .couple-names {
+                    padding: 5px 0;
+
+                    h2 {
+                        margin: 15px 0;
+                    }
+                }
+
+                .divider {
+                    padding: 15px;
+
+                    .divider-icon {
+                        width: 40px;
+                    }
+                }
+            }
+
+            .location-time {
+                .top-detail {
+                    padding: 30px 0;
+
+                    h2 {
+                    }
+                }
+
+                .photo-area {
+                    padding-top: 5px;
+
+                    img.couple-img {
+                        width: 50%;
+                    }
+                }
+
+                .invitation-text {
+                    padding: 25px 0;
+                }
+
+                .time {
+                    h2 {
+                        // margin: 5px;
+                    }
+                }
+
+                .venue-details {
+                    .divider {
+                        padding: 25px 0 15px;
+
+                        .divider-icon {
+                            width: 50px;
+                        }
+                    }
+
+                    p.announcement {
+                        padding-bottom: 10px;
+                    }
+
+                    .location-name {
+                        // padding-bottom: 10px;
+                    }
+
+                    .map-link {
+                        padding: 15px 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .divider-paint {

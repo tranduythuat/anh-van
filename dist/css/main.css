@@ -296,6 +296,11 @@ section {
 .cover .content .divider img.bottom {
   transform: rotateX(180deg);
 }
+@media (max-width: 499px) {
+  .cover .content .names {
+    font-size: 8.5vw;
+  }
+}
 
 .intro {
   margin-top: 20px;
@@ -588,6 +593,83 @@ section {
 @media (max-width: 361px) {
   .intro .content {
     height: 1530px;
+  }
+}
+@media (max-width: 340px) {
+  .intro .content {
+    height: 1400px;
+  }
+  .intro .content .invitation .logo {
+    padding: 60px 0 40px;
+  }
+  .intro .content .invitation .logo .box-img {
+    width: 30%;
+  }
+  .intro .content .invitation .family-info {
+    padding-bottom: 20px;
+  }
+  .intro .content .invitation .couple-names {
+    padding: 10px 0;
+  }
+  .intro .content .invitation .couple-names h2 {
+    margin: 15px 0;
+  }
+  .intro .content .invitation .divider {
+    padding: 15px;
+  }
+  .intro .content .invitation .divider .divider-icon {
+    width: 45px;
+  }
+}
+@media (max-width: 330px) {
+  .intro .content {
+    padding: 0 5%;
+    height: 1300px;
+  }
+  .intro .content .invitation .logo {
+    padding: 50px 0 40px;
+  }
+  .intro .content .invitation .logo .box-img {
+    width: 27%;
+  }
+  .intro .content .invitation .family-info {
+    padding-bottom: 15px;
+  }
+  .intro .content .invitation .couple-names {
+    padding: 5px 0;
+  }
+  .intro .content .invitation .couple-names h2 {
+    margin: 15px 0;
+  }
+  .intro .content .invitation .divider {
+    padding: 15px;
+  }
+  .intro .content .invitation .divider .divider-icon {
+    width: 40px;
+  }
+  .intro .content .location-time .top-detail {
+    padding: 30px 0;
+  }
+  .intro .content .location-time .photo-area {
+    padding-top: 5px;
+  }
+  .intro .content .location-time .photo-area img.couple-img {
+    width: 50%;
+  }
+  .intro .content .location-time .invitation-text {
+    padding: 25px 0;
+  }
+  .intro .content .location-time .venue-details .divider {
+    padding: 25px 0 15px;
+  }
+  .intro .content .location-time .venue-details .divider .divider-icon {
+    width: 50px;
+  }
+  .intro .content .location-time .venue-details p.announcement {
+    padding-bottom: 10px;
+  }
+  .intro .content .location-time .venue-details .map-link {
+    padding: 15px 0;
   }
 }
 
