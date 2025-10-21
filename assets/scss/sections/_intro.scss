@@ -226,6 +226,12 @@
         }
     }
 
+    @media (max-width: 479px) {
+        .content {
+            height: 2020px;
+        }
+    }
+
 
     @media (max-width: 465px) {
         .content {
@@ -330,6 +336,12 @@
             }
         }
 
+    }
+
+    @media (max-width: 444px) {
+        .content {
+            height: 1860px;
+        }
     }
 
     @media (max-width: 440px) {
@@ -449,7 +461,83 @@
         }
     }
 
-    @media (max-width: 391px) {
+    @media (max-width: 399px) {
+        .content {
+            height: 1600px;
+            .invitation {
+                .logo {
+                    padding: 60px 0 50px;
+                    .box-img {
+                        width: 28%;
+                    }
+                }
+                .family-info {
+                    padding-bottom: 10px;
+                    img {
+                        width: 14px;
+                    }
+                }
+
+                .couple-names {
+                    padding: 15px 0;
+
+                    h2 {
+                        margin: 20px 0;
+                    }
+                }
+
+                .divider {
+                    padding: 15px;
+
+                    .divider-icon {
+                        width: 50px;
+                    }
+                }
+            }
+
+            .location-time {
+                .top-detail {
+                    padding: 25px 0;
+                }
+                .photo-area {
+                    padding-top: 5px;
+                    img.couple-img {
+                        width: 60%;
+                    }
+                }
+                .invitation-text {
+                    padding: 30px 0;
+
+                    p {
+                    }
+                }
+                .time {
+                    h2 {
+                        // margin: 5px;
+                    }
+                }
+                .venue-details {
+                    .divider {
+                        padding: 30px 0 20px;
+                        .divider-icon {
+                            width: 60px;
+                        }
+                    }
+                    p.announcement {
+                        padding-bottom: 15px;
+                    }
+                    .location-name {
+                        // padding-bottom: 10px;
+                    }
+                    .map-link {
+                        padding: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 393px) {
         .content {
             padding: 0 10%;
             height: 1680px;
